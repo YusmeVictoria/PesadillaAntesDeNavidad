@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://bors2h4x37wh8"]
+
+[ext_resource type="PackedScene" uid="uid://dht7kavc8p1ey" path="res://scenes/scenes/defenders/DefenderBase.tscn" id="1_j7u25"]
+[ext_resource type="Script" uid="uid://dnkvy4x47v2jd" path="res://scripts/scripts/defenders/Cascanueces.gd" id="2_mqikt"]
+[ext_resource type="PackedScene" uid="uid://sak2ns68hsou" path="res://scenes/scenes/defenders/Projectile.tscn" id="3_has7p"]
+[ext_resource type="Texture2D" uid="uid://mvm6cycd2kva" path="res://icon.svg" id="4_lbj8r"]
+
+[node name="DefenderBase" instance=ExtResource("1_j7u25")]
+script = ExtResource("2_mqikt")
+projectile_scene = ExtResource("3_has7p")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(1, -1)
+texture = ExtResource("4_lbj8r")

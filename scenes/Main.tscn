@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm0xdw57uab33"]
+
+[ext_resource type="PackedScene" uid="uid://uyl55mnrkst2" path="res://scenes/scenes/enemies/BasicEnemy.tscn" id="1_rvslj"]
+[ext_resource type="PackedScene" uid="uid://bors2h4x37wh8" path="res://scenes/scenes/defenders/Cascanueces.tscn" id="2_0bbpv"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(505, 105)
+
+[node name="DefenderBase" parent="." instance=ExtResource("2_0bbpv")]
+position = Vector2(-251, 76)
+
+[node name="BasicEnemy" parent="." instance=ExtResource("1_rvslj")]
+position = Vector2(136, 73)

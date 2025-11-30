@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7uesbylyqshr"]
+
+[ext_resource type="PackedScene" uid="uid://dht7kavc8p1ey" path="res://scenes/scenes/defenders/DefenderBase.tscn" id="1_3ckbs"]
+
+[node name="DefenderBase" instance=ExtResource("1_3ckbs")]

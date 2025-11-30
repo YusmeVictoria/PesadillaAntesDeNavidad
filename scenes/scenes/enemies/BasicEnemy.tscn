@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://uyl55mnrkst2"]
+
+[ext_resource type="Script" uid="uid://d0iihhuedig6y" path="res://scripts/scripts/enemies/BasicEnemy.gd" id="1_kg4e8"]
+[ext_resource type="Texture2D" uid="uid://mvm6cycd2kva" path="res://icon.svg" id="2_bpch2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuuq"]
+
+[node name="BasicEnemy" type="CharacterBody2D"]
+script = ExtResource("1_kg4e8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bpch2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0wuuq")
